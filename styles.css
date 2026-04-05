@@ -16,6 +16,18 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
 body {
     background-color: var(--bg-color);
     color: var(--text-primary);
@@ -26,6 +38,7 @@ body {
     background-attachment: fixed;
     min-height: 100vh;
     padding-top: 80px;
+    margin: 0;
 }
 
 /* Container */
