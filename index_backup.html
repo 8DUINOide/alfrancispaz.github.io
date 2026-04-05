@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Francis B. Paz | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Al Francis B. Paz, a Computer Engineering Student at Ateneo De Naga University.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="bento-container">
+
+        <!-- Hero Card (2x2) -->
+        <div class="card hero-card">
+            <div class="badge">Computer Engineering Student</div>
+            <h1>Al Francis B. Paz</h1>
+            <p>Building the bridge between <span class="accent-text">Hardware</span> and <span
+                    class="accent-text">Software</span>.</p>
+            <div class="typing-container">I am a <span class="typing-text"></span></div>
+            <div class="hero-actions">
+                <a href="mailto:afpaz@gbox.adnu.edu.ph" class="btn primary">Hire Me</a>
+                <a href="Resume.pdf" target="_blank" class="btn secondary">Resume</a>
+            </div>
+        </div>
+
+        <!-- Profile Card (1x1) -->
+        <div class="card profile-card">
+            <img src="profile.jpg" alt="Profile" class="profile-img">
+            <div class="status-indicator">
+                <span class="dot"></span> Open to Work
+            </div>
+        </div>
+
+        <!-- Socials Card (1x1) -->
+        <div class="card social-card">
+            <h3>Connect</h3>
+            <div class="social-links-grid">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/8DUINOide" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:afpaz@gbox.adnu.edu.ph"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- Skills Card (1x2) - Tall -->
+        <div class="card skills-card">
+            <h3>Tech Stack</h3>
+            <div class="skills-list">
+                <div class="skill-item"><i class="fab fa-cuttlefish"></i> C++ / Arduino</div>
+                <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+                <div class="skill-item"><i class="fab fa-react"></i> React Native</div>
+                <div class="skill-item"><i class="fas fa-database"></i> Firebase/SQL</div>
+                <div class="skill-item"><i class="fas fa-leaf"></i> Spring Boot</div>
+            </div>
+        </div>
+
+        <!-- Experience Card (2x1) -->
+        <div class="card experience-card">
+            <h3>Experience</h3>
+            <div class="experience-list">
+                <div class="exp-item">
+                    <div class="exp-date">2025</div>
+                    <div class="exp-info">
+                        <h4>Intern / Trainee</h4>
+                        <p>REVLV Solutions</p>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-date">Present</div>
+                    <div class="exp-info">
+                        <h4>Academic Director</h4>
+                        <p>AdNU Student Org</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Header (Full Width) -->
+        <div class="card section-header-card">
+            <h2>Selected Works</h2>
+            <p>Click to explore details</p>
+        </div>
+
+        <!-- Project Cards (Injected via JS or hardcoded below for layout structure) -->
+        <!-- We will keep the hardcoded ones matching script.js order for initial render if JS fails, 
+             but we should ideally let JS populate or map IDs. 
+             For now, let's create a container for them or manually place them as grid cells. -->
+
+        <!-- University Web Portal -->
+        <div class="card project-card">
+            <img src="Projects/University Web Portal/Home.jpg" alt="University Web Portal">
+            <div class="project-info-overlay">
+                <h3>University Web Portal</h3>
+                <span class="project-tag">Web Dev</span>
+            </div>
+        </div>
+
+        <!-- BINI Music -->
+        <div class="card project-card">
+            <img src="Projects/BINI Music Streaming/Homepage_A.jpg" alt="BINI Music">
+            <div class="project-info-overlay">
+                <h3>BINI Music Streaming</h3>
+                <span class="project-tag">Mobile App</span>
+            </div>
+        </div>
+
+        <!-- Arduino -->
+        <div class="card project-card">
+            <img src="Projects/ARDUINO-PROJECTS/Schematic Diagram for Distance Measurement.jpg" alt="Arduino">
+            <div class="project-info-overlay">
+                <h3>Arduino Projects</h3>
+                <span class="project-tag">IoT / Hardware</span>
+            </div>
+        </div>
+
+        <!-- Expense Tracker -->
+        <div class="card project-card">
+            <img src="Projects/Expense Tracking System/homepage.png" alt="Expense Tracker">
+            <div class="project-info-overlay">
+                <h3>Expense Tracking</h3>
+                <span class="project-tag">Backend</span>
+            </div>
+        </div>
+
+        <!-- Brick Breaker -->
+        <div class="card project-card">
+            <img src="Projects/Brick Breaker CpE/Game Completed Screen.jpg" alt="Brick Breaker">
+            <div class="project-info-overlay">
+                <h3>Brick Breaker CpE</h3>
+                <span class="project-tag">Game Dev</span>
+            </div>
+        </div>
+
+        <!-- TicTac Toe -->
+        <div class="card project-card">
+            <img src="Projects/TicTac Toe/Homepage.jpg" alt="Tic Tac Toe">
+            <div class="project-info-overlay">
+                <h3>TicTac Toe</h3>
+                <span class="project-tag">Android</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <img src="" alt="Project Image" id="modal-image">
+                    <button class="prev-btn" onclick="changeImage(-1)">&#10094;</button>
+                    <button class="next-btn" onclick="changeImage(1)">&#10095;</button>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title">Project Title</h2>
+                    <div class="modal-tags" id="modal-tags"></div>
+                    <p id="modal-description">Description...</p>
+                    <div class="modal-tech-stack">
+                        <h3>Tech Stack</h3>
+                        <p id="modal-stack">Stack...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Al Francis B. Paz. Designed with Bento Grid Style.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

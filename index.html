@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Francis B. Paz | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Al Francis B. Paz, a Computer Engineering Student at Ateneo De Naga University.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="adnu_logo.png" alt="ADNU Logo" class="nav-logo-img">
+                <span class="nav-brand">Al Francis Paz</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#internships" class="nav-link">Internships</a></li>
+                <li><a href="#events" class="nav-link">Events</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">Computer Engineering Student</div>
+                    <h1>Al Francis B. Paz</h1>
+                    <p>Building the bridge between <span class="accent-text">Hardware</span> and <span
+                            class="accent-text">Software</span>.</p>
+                    <div class="typing-container">I am a <span class="typing-text"></span></div>
+                    <div class="hero-actions">
+                        <a href="mailto:afpaz@gbox.adnu.edu.ph" class="btn primary">Hire Me</a>
+                        <a href="Resume.pdf" target="_blank" class="btn secondary">Download Resume</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="profile.jpg" alt="Profile" class="profile-img">
+                    <div class="status-indicator">
+                        <span class="dot"></span> Open to Work
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Computer Engineering student at Ateneo De Naga University with a strong foundation in both hardware and software development. My journey in technology has led me to explore various domains from embedded systems to web development, and from mobile apps to cybersecurity.</p>
+                    <p>With hands-on experience in multiple programming languages and frameworks, I strive to create innovative solutions that bridge the gap between theoretical knowledge and practical applications.</p>
+                    <div class="skills-section">
+                        <h3>Tech Stack</h3>
+                        <div class="skills-categories">
+                            <!-- Frontend/Mobile -->
+                            <div class="skill-category">
+                                <h4><i class="fas fa-laptop-code"></i> Frontend/Mobile</h4>
+                                <div class="skills-grid">
+                                    <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+                                    <div class="skill-item"><i class="fab fa-react"></i> React Native</div>
+                                    <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+                                    <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Backend/Cloud -->
+                            <div class="skill-category">
+                                <h4><i class="fas fa-server"></i> Backend/Cloud</h4>
+                                <div class="skills-grid">
+                                    <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                                    <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+                                    <div class="skill-item"><i class="fas fa-leaf"></i> Spring Boot</div>
+                                    <div class="skill-item"><i class="fas fa-database"></i> Firebase/SQL</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Hardware/Tools -->
+                            <div class="skill-category">
+                                <h4><i class="fas fa-tools"></i> Hardware/Tools</h4>
+                                <div class="skills-grid">
+                                    <div class="skill-item"><i class="fab fa-cuttlefish"></i> C++ / Arduino</div>
+                                    <div class="skill-item"><i class="fab fa-linux"></i> Linux</div>
+                                    <div class="skill-item"><i class="fab fa-git-alt"></i> Git</div>
+                                    <div class="skill-item"><i class="fas fa-code"></i> Postman</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- University Web Portal -->
+                <div class="project-card" onclick="openProjectGallery('University Web Portal')">
+                    <img src="Projects/University Web Portal/Home.jpg" alt="University Web Portal">
+                    <div class="project-content">
+                        <h3>University Web Portal</h3>
+                        <p>A comprehensive student dashboard providing access to schedules, grades, financial statements, and profile updates.</p>
+                        <div class="project-tags">
+                            <span class="tag">Web Dev</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/8DUINOide/University-Web-Portal" target="_blank" class="btn btn-outline">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                            <a href="#" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BINI Music -->
+                <div class="project-card" onclick="openProjectGallery('BINI Music Streaming')">
+                    <img src="Projects/BINI Music Streaming/BINI.jpg" alt="BINI Music">
+                    <div class="project-content">
+                        <h3>BINI Music Streaming</h3>
+                        <p>A mobile music streaming app dedicated to BINI, featuring Spotify-like controls and background playback.</p>
+                        <div class="project-tags">
+                            <span class="tag">Mobile App</span>
+                            <span class="tag">Kotlin</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/8DUINOide/BINI-Mobile-Music-App" target="_blank" class="btn btn-outline">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                            <a href="#" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arduino Projects -->
+                <div class="project-card" onclick="openProjectGallery('Arduino Projects')">
+                    <img src="Projects/ARDUINO-PROJECTS/TinkerCad Projects/TinkerCad Projects.png" alt="Arduino">
+                    <div class="project-content">
+                        <h3>Arduino Projects</h3>
+                        <p>A collection of 10+ hardware-software integration projects including robots, RFID systems, and sensors.</p>
+                        <div class="project-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">Hardware</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/8DUINOide/ARDUINO-PROJECTS" target="_blank" class="btn btn-outline">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                            <a href="#" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expense Tracker -->
+                <div class="project-card" onclick="openProjectGallery('Expense Tracking System')">
+                    <img src="Projects/Expense Tracking System/homepage.png" alt="Expense Tracker">
+                    <div class="project-content">
+                        <h3>Expense Tracking System</h3>
+                        <p>A robust backend system for financial management featuring JWT authentication and budget workflows.</p>
+                        <div class="project-tags">
+                            <span class="tag">Backend</span>
+                            <span class="tag">Spring Boot</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/8DUINOide/Expense_Tracking_Backend" target="_blank" class="btn btn-outline">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                            <a href="#" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brick Breaker -->
+                <div class="project-card" onclick="openProjectGallery('Brick Breaker CpE')">
+                    <img src="Projects/Brick Breaker CpE/BrickBreaker.jpg" alt="Brick Breaker">
+                    <div class="project-content">
+                        <h3>Brick Breaker CpE</h3>
+                        <p>An educational arcade game where players break bricks representing computer engineering subjects.</p>
+                        <div class="project-tags">
+                            <span class="tag">Game Dev</span>
+                            <span class="tag">React Native</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/8DUINOide/Brick-Breaker-App" target="_blank" class="btn btn-outline">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                            <a href="#" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TicTac Toe -->
+                <div class="project-card" onclick="openProjectGallery('TicTac Toe')">
+                    <img src="Projects/TicTac Toe/App icon.png" alt="Tic Tac Toe">
+                    <div class="project-content">
+                        <h3>TicTac Toe</h3>
+                        <p>A real-time multiplayer Tic-Tac-Toe game for Android with online matchmaking using room codes.</p>
+                        <div class="project-tags">
+                            <span class="tag">Android</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/8DUINOide/TicTacToe-App" target="_blank" class="btn btn-outline">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                            <a href="#" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships" class="section">
+        <div class="container">
+            <h2 class="section-title">Internships</h2>
+            <div class="internship-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025 Jun - 2025 Jul</div>
+                        <div class="internship-header">
+                            <img src="revlv_logo.png" alt="REVLV Logo" class="company-logo">
+                            <div>
+                                <h3>Backend Developer Intern / Trainee</h3>
+                                <p>REVLV Solutions Inc.</p>
+                            </div>
+                        </div>
+                        <div class="internship-description">
+                            <p>As a Backend Developer Intern at REVLV Solutions Inc., I developed ExpenSEEs-API, a RESTful backend for expense tracking using Spring Boot, Java, and PostgreSQL. My responsibilities included implementing user management, budget operations, expense tracking, and liquidation reports. I also integrated JWT-based authentication and Spring Security for role-based access control, configured and tested API endpoints using Postman and IntelliJ IDEA, and collaborated with frontend developers to integrate the API with the Admin Dashboard and mobile app. Finally, I deployed the backend on a DigitalOcean server, ensuring CORS configuration for seamless frontend connectivity.</p>
+                        </div>
+                        <div class="internship-gallery">
+                            <div class="gallery-item" onclick="openProjectGallery('Internship Experience')">
+                                <img src="Internships/Deployment.jpg" alt="Deployment" class="gallery-img">
+                            </div>
+                            <div class="gallery-item" onclick="openProjectGallery('Internship Experience')">
+                                <img src="Internships/ADNU OJT.jpg" alt="OJT" class="gallery-img">
+                            </div>
+                            <div class="gallery-item" onclick="openProjectGallery('Internship Experience')">
+                                <img src="Internships/Day 1.jpg" alt="Day 1" class="gallery-img">
+                            </div>
+                            <div class="gallery-item" onclick="openProjectGallery('Internship Experience')">
+                                <img src="Internships/Reporting.jpg" alt="Reporting" class="gallery-img">
+                            </div>
+                        </div>
+                        <div class="internship-certificate">
+                            <h4>Certificate of Completion</h4>
+                            <div class="certificate-item">
+                                <img src="revlv_logo.png" alt="REVLV Logo" class="cert-logo">
+                                <div class="certificate-info">
+                                    <h5>240 Hours OJT Completion</h5>
+                                    <p>REVLV Solutions - Certificate of Completion</p>
+                                    <a href="#" onclick="openCertificateLightbox('Internships/240 hours OJT at REVLV Solutions.pdf'); return false;" class="btn btn-outline">
+                                        <i class="fas fa-file-pdf"></i> View Certificate
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section">
+        <div class="container">
+            <h2 class="section-title">Events</h2>
+            <div class="events-container">
+                <!-- Breadboarding Competition Row -->
+                <div class="event-row">
+                    <div class="event-info">
+                        <div class="event-header">
+                            <div class="event-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div>
+                                <h3>Breadboarding Competition</h3>
+                                <p>My 4-year journey from learning basics to mentoring juniors in hardware circuits and electronics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-images-scroll">
+                        <div class="event-carousel">
+                            <!-- First Year -->
+                            <div class="year-marker">
+                                <span class="year-label">First Year</span>
+                            </div>
+                            <img src="Events/Breadboarding/1st year/1.jpg" alt="Breadboarding" class="event-carousel-img">
+                            <img src="Events/Breadboarding/1st year/2.jpg" alt="Breadboarding" class="event-carousel-img">
+                            <img src="Events/Breadboarding/1st year/3.jpg" alt="Breadboarding" class="event-carousel-img">
+                            <img src="Events/Breadboarding/1st year/4.jpg" alt="Breadboarding" class="event-carousel-img">
+                            <img src="Events/Breadboarding/1st year/5.jpg" alt="Breadboarding" class="event-carousel-img">
+                            
+                            <!-- Second Year -->
+                            <div class="year-marker">
+                                <span class="year-label">Second Year</span>
+                            </div>
+                            <img src="Events/Breadboarding/2nd year/1.jpg" alt="Breadboarding" class="event-carousel-img">
+                            <img src="Events/Breadboarding/2nd year/2.jpg" alt="Breadboarding" class="event-carousel-img">
+                            <img src="Events/Breadboarding/2nd year/3.jpg" alt="Breadboarding" class="event-carousel-img">
+                            <img src="Events/Breadboarding/2nd year/4.jpg" alt="Breadboarding" class="event-carousel-img">
+                            <img src="Events/Breadboarding/2nd year/5.jpg" alt="Breadboarding" class="event-carousel-img">
+                            <img src="Events/Breadboarding/2nd year/6.jpg" alt="Breadboarding" class="event-carousel-img">
+                            
+                            <!-- Third Year -->
+                            <div class="year-marker">
+                                <span class="year-label">Third Year</span>
+                            </div>
+                            <img src="Events/Breadboarding/3rd year/1.jpg" alt="Breadboarding" class="event-carousel-img">
+                            <img src="Events/Breadboarding/3rd year/2.jpg" alt="Breadboarding" class="event-carousel-img">
+                            <img src="Events/Breadboarding/3rd year/3.jpg" alt="Breadboarding" class="event-carousel-img">
+                            <img src="Events/Breadboarding/3rd year/4.jpg" alt="Breadboarding" class="event-carousel-img">
+                            
+                            <!-- Fourth Year -->
+                            <div class="year-marker">
+                                <span class="year-label">Fourth Year</span>
+                            </div>
+                            <img src="Events/Breadboarding/4th year/1.jpg" alt="Breadboarding" class="event-carousel-img">
+                            <img src="Events/Breadboarding/4th year/2.jpg" alt="Breadboarding" class="event-carousel-img">
+                            <img src="Events/Breadboarding/4th year/3.jpg" alt="Breadboarding" class="event-carousel-img">
+                            <img src="Events/Breadboarding/4th year/4.jpg" alt="Breadboarding" class="event-carousel-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LAAD Software Festival Row -->
+                <div class="event-row">
+                    <div class="event-info">
+                        <div class="event-header">
+                            <div class="event-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div>
+                                <h3>LAAD Software Festival</h3>
+                                <p>Annual software development showcase featuring innovative projects and coding competitions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-images-scroll">
+                        <div class="event-carousel">
+                            <img src="Events/LAAD Software Festival/1.jpg" alt="LAAD Festival" class="event-carousel-img">
+                            <img src="Events/LAAD Software Festival/2.jpg" alt="LAAD Festival" class="event-carousel-img">
+                            <img src="Events/LAAD Software Festival/3.jpg" alt="LAAD Festival" class="event-carousel-img">
+                            <img src="Events/LAAD Software Festival/4.jpg" alt="LAAD Festival" class="event-carousel-img">
+                            <img src="Events/LAAD Software Festival/5.jpg" alt="LAAD Festival" class="event-carousel-img">
+                            <img src="Events/LAAD Software Festival/6.jpg" alt="LAAD Festival" class="event-carousel-img">
+                            <img src="Events/LAAD Software Festival/7.jpg" alt="LAAD Festival" class="event-carousel-img">
+                            <img src="Events/LAAD Software Festival/8.jpg" alt="LAAD Festival" class="event-carousel-img">
+                            <img src="Events/LAAD Software Festival/9.jpg" alt="LAAD Festival" class="event-carousel-img">
+                            <img src="Events/LAAD Software Festival/10.jpg" alt="LAAD Festival" class="event-carousel-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Packethacks 2024 Row -->
+                <div class="event-row">
+                    <div class="event-info">
+                        <div class="event-header">
+                            <div class="event-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <div>
+                                <h3>Packethacks 2024</h3>
+                                <p>An ideation competition where we pitched innovative solutions to address societal challenges, successfully advancing to the final round</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-images-scroll">
+                        <div class="event-carousel">
+                            <img src="Events/Packethacks 2024/1.jpg" alt="Packethacks" class="event-carousel-img">
+                            <img src="Events/Packethacks 2024/2.jpg" alt="Packethacks" class="event-carousel-img">
+                            <img src="Events/Packethacks 2024/3.jpg" alt="Packethacks" class="event-carousel-img">
+                            <img src="Events/Packethacks 2024/4.jpg" alt="Packethacks" class="event-carousel-img">
+                            <img src="Events/Packethacks 2024/5.jpg" alt="Packethacks" class="event-carousel-img">
+                            <img src="Events/Packethacks 2024/6.jpg" alt="Packethacks" class="event-carousel-img">
+                            <img src="Events/Packethacks 2024/7.jpg" alt="Packethacks" class="event-carousel-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizations Section -->
+    <section id="organizations" class="section">
+        <div class="container">
+            <h2 class="section-title">Organizations</h2>
+            <div class="organizations-list">
+                <div class="org-item">
+                    <img src="icpep_logo.png" alt="ICPEP Logo" class="org-logo">
+                    <div>
+                        <h3>Member (2022 - 2026)</h3>
+                        <p>Institute of Computer Engineers of the Philippines Student Edition - Bicol</p>
+                    </div>
+                </div>
+                <div class="org-item">
+                    <img src="adnu_coes_logo.jpg" alt="COES Logo" class="org-logo">
+                    <div>
+                        <h3>Academic Director (2024 - 2026)</h3>
+                        <p>Ateneo Computer Engineering Society</p>
+                    </div>
+                </div>
+                <div class="org-item">
+                    <img src="chess_logo.jpg" alt="Chess Logo" class="org-logo">
+                    <div>
+                        <h3>Member (2024 - 2026)</h3>
+                        <p>Ateneo Chess Enthusiasts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seminars Section -->
+    <section id="seminars" class="section">
+        <div class="container">
+            <h2 class="section-title">Seminars & Fieldtrips</h2>
+            
+            <!-- Seminars (Certificates) -->
+            <div class="subsection">
+                <h3 class="subsection-title">Seminars & Certifications</h3>
+                <div class="seminars-certificates-grid">
+                    <div class="certificate-item" onclick="openCertificateLightbox('Seminars and Fieldtrips/Cybersecurity Awareness.pdf')">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Cybersecurity Awareness</h4>
+                        <p>View Certificate</p>
+                    </div>
+                    <div class="certificate-item" onclick="openCertificateLightbox('Seminars and Fieldtrips/Code, Click, Connect - Basic Web Automation with Playwright.pdf')">
+                        <i class="fas fa-code"></i>
+                        <h4>Web Automation with Playwright</h4>
+                        <p>View Certificate</p>
+                    </div>
+                    <div class="certificate-item" onclick="openCertificateLightbox('Seminars and Fieldtrips/Continuous Integration and Deployment using GitLab.pdf')">
+                        <i class="fab fa-gitlab"></i>
+                        <h4>CI/CD with GitLab</h4>
+                        <p>View Certificate</p>
+                    </div>
+                    <div class="certificate-item" onclick="openCertificateLightbox('Seminars and Fieldtrips/Cybersecurity.pdf')">
+                        <i class="fas fa-lock"></i>
+                        <h4>Cybersecurity</h4>
+                        <p>View Certificate</p>
+                    </div>
+                    <div class="certificate-item" onclick="openCertificateLightbox('Seminars and Fieldtrips/Smart Transport Surveys - Capturing and Visualizing Travel Time and Delay Data.pdf')">
+                        <i class="fas fa-traffic-light"></i>
+                        <h4>Smart Transport Surveys</h4>
+                        <p>View Certificate</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Field Trips -->
+            <div class="subsection">
+                <h3 class="subsection-title">Field Trips & Industrial Visits</h3>
+                <div class="fieldtrips-gallery">
+                    <div class="gallery-item" onclick="openProjectGallery('Field Trip Experience')">
+                        <img src="Seminars and Fieldtrips/BRP Hydrographer Presbitero.jpg" alt="BRP Hydrographer Presbitero" class="gallery-img">
+                        <div class="gallery-caption">
+                            <h4>BRP Hydrographer Presbitero</h4>
+                            <p>Marine vessel visit</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openProjectGallery('Field Trip Experience')">
+                        <img src="Seminars and Fieldtrips/Vessel Traffic Management System.jpg" alt="Vessel Traffic Management System" class="gallery-img">
+                        <div class="gallery-caption">
+                            <h4>Vessel Traffic Management</h4>
+                            <p>Port authority systems</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openProjectGallery('Field Trip Experience')">
+                        <img src="Seminars and Fieldtrips/GigaMare.jpg" alt="GigaMare" class="gallery-img">
+                        <div class="gallery-caption">
+                            <h4>GigaMare</h4>
+                            <p>Maritime technology company</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openProjectGallery('Field Trip Experience')">
+                        <img src="Seminars and Fieldtrips/wistron.jpg" alt="Wistron" class="gallery-img">
+                        <div class="gallery-caption">
+                            <h4>Wistron</h4>
+                            <p>Technology manufacturing</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openProjectGallery('Field Trip Experience')">
+                        <img src="Seminars and Fieldtrips/Law Enforcement Department.jpg" alt="Law Enforcement Department" class="gallery-img">
+                        <div class="gallery-caption">
+                            <h4>Law Enforcement Department</h4>
+                            <p>Government facility visit</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openProjectGallery('Field Trip Experience')">
+                        <img src="Seminars and Fieldtrips/PLDT & Smart.jpg" alt="PLDT & Smart" class="gallery-img">
+                        <div class="gallery-caption">
+                            <h4>PLDT & Smart</h4>
+                            <p>Telecommunications visit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-item">
+                    <img src="cisco_logo.jpg" alt="Cisco Logo" class="cert-logo">
+                    <h3>Data Analytics Essentials</h3>
+                    <a href="#" onclick="openCertificateLightbox('Certifications/Data Analytics Essentials.pdf'); return false;" class="btn btn-outline">View Certificate</a>
+                </div>
+                <div class="cert-item">
+                    <img src="cisco_logo.jpg" alt="Cisco Logo" class="cert-logo">
+                    <h3>Ethical Hacker</h3>
+                    <a href="#" onclick="openCertificateLightbox('Certifications/Ethical Hacker.pdf'); return false;" class="btn btn-outline">View Certificate</a>
+                </div>
+                <div class="cert-item">
+                    <img src="cisco_logo.jpg" alt="Cisco Logo" class="cert-logo">
+                    <h3>Introduction to Cybersecurity</h3>
+                    <a href="#" onclick="openCertificateLightbox('Certifications/Introduction to Cybersecurity.pdf'); return false;" class="btn btn-outline">View Certificate</a>
+                </div>
+                <div class="cert-item">
+                    <img src="cisco_logo.jpg" alt="Cisco Logo" class="cert-logo">
+                    <h3>Introduction to IoT and Digital Transformation</h3>
+                    <a href="#" onclick="openCertificateLightbox('Certifications/Introduction to IoT and Digital Transformation.pdf'); return false;" class="btn btn-outline">View Certificate</a>
+                </div>
+                <div class="cert-item">
+                    <img src="cisco_logo.jpg" alt="Cisco Logo" class="cert-logo">
+                    <h3>Junior Cybersecurity Analyst</h3>
+                    <a href="#" onclick="openCertificateLightbox('Certifications/Junior Cybersecurity Analyst.pdf'); return false;" class="btn btn-outline">View Certificate</a>
+                </div>
+                <div class="cert-item">
+                    <img src="ndg_logo.jpg" alt="NDG Logo" class="cert-logo">
+                    <h3>NDG Linux Essentials</h3>
+                    <a href="#" onclick="openCertificateLightbox('Certifications/NDG Linux Essentials.pdf'); return false;" class="btn btn-outline">View Certificate</a>
+                </div>
+                <div class="cert-item">
+                    <img src="ndg_logo.jpg" alt="NDG Logo" class="cert-logo">
+                    <h3>NDG Linux Unhatched</h3>
+                    <a href="#" onclick="openCertificateLightbox('Certifications/NDG Linux Unhatched.pdf'); return false;" class="btn btn-outline">View Certificate</a>
+                </div>
+                <div class="cert-item">
+                    <img src="cisco_logo.jpg" alt="Cisco Logo" class="cert-logo">
+                    <h3>Network Support and Security</h3>
+                    <a href="#" onclick="openCertificateLightbox('Certifications/Network Support and Security.pdf'); return false;" class="btn btn-outline">View Certificate</a>
+                </div>
+                <div class="cert-item">
+                    <img src="cisco_logo.jpg" alt="Cisco Logo" class="cert-logo">
+                    <h3>Programming Essentials in C++</h3>
+                    <a href="#" onclick="openCertificateLightbox('Certifications/Programming Essentials in C++.pdf'); return false;" class="btn btn-outline">View Certificate</a>
+                </div>
+                <div class="cert-item">
+                    <img src="cisco_logo.jpg" alt="Cisco Logo" class="cert-logo">
+                    <h3>Programming Essentials in Python</h3>
+                    <a href="#" onclick="openCertificateLightbox('Certifications/Programming Essentials in Python.pdf'); return false;" class="btn btn-outline">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form-section">
+                    <p>I'm always interested in hearing about new opportunities and exciting projects. Feel free to reach out!</p>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">> name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">> email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">> message</label>
+                            <textarea id="message" name="message" placeholder="Your message..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">TRANSMIT</button>
+                    </form>
+                </div>
+                <div class="external-channels">
+                    <p>EXTERNAL CHANNELS</p>
+                    <a href="https://github.com/8DUINOide" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/al-francis-paz-32424224a/" target="_blank" class="btn btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <img src="adnu_logo.png" alt="ADNU Logo" class="footer-logo">
+                <p>&copy; 2026 Al Francis B. Paz. All rights reserved.</p>
+                <p>Computer Engineering Student at Ateneo De Naga University</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
