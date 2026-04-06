@@ -566,14 +566,21 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     document.head.appendChild(style);
 
-    // Parallax effect for hero section
+    // Optimized parallax effect for hero section using requestAnimationFrame
+    let isScrolling = false;
     window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const hero = document.querySelector('.hero');
-        if (hero) {
-            hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+        if (!isScrolling) {
+            window.requestAnimationFrame(() => {
+                const scrolled = window.pageYOffset;
+                const hero = document.querySelector('.hero');
+                if (hero) {
+                    hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+                }
+                isScrolling = false;
+            });
+            isScrolling = true;
         }
-    });
+    }, { passive: true });
 
     // Project card hover effect with tilt
     document.querySelectorAll('.project-card').forEach(card => {
@@ -692,7 +699,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 3000);
     }
 
-    // Initialize seamless carousels
+    // Initialize seamless carousels (cloning for CSS animation)
     function initCarousels() {
         const carousels = document.querySelectorAll('.event-carousel, .internship-gallery');
         
@@ -704,52 +711,6 @@ document.addEventListener('DOMContentLoaded', () => {
             items.forEach(item => {
                 const clone = item.cloneNode(true);
                 carousel.appendChild(clone);
-            });
-            
-            // Set up automatic scrolling
-            let scrollPosition = 0;
-            const scrollSpeed = 1; // pixels per frame
-            let scrollInterval;
-            
-            function scroll() {
-                scrollPosition += scrollSpeed;
-                
-                if (scrollPosition >= carousel.scrollWidth / 2) {
-                    scrollPosition = 0;
-                    carousel.scrollTo({
-                        left: 0,
-                        behavior: 'auto'
-                    });
-                } else {
-                    carousel.scrollTo({
-                        left: scrollPosition,
-                        behavior: 'auto'
-                    });
-                }
-            }
-            
-            function startScrolling() {
-                scrollInterval = setInterval(scroll, 30);
-            }
-            
-            function stopScrolling() {
-                if (scrollInterval) {
-                    clearInterval(scrollInterval);
-                }
-            }
-            
-            // Start scrolling
-            startScrolling();
-            
-            // Pause on hover
-            carousel.addEventListener('mouseenter', () => {
-                stopScrolling();
-            });
-            
-            // Resume on mouse leave
-            carousel.addEventListener('mouseleave', () => {
-                scrollPosition = carousel.scrollLeft;
-                startScrolling();
             });
         });
     }
