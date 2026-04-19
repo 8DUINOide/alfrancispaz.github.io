@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al Francis B. Paz - Resume</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    :root {
+        --primary-color: #1f2937;
+        --secondary-color: #4b5563;
+        --accent-color: #2563eb;
+        --border-color: #e5e7eb;
+    }
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.4;
+        color: var(--primary-color);
+        margin: 0;
+        padding: 0;
+        background-color: #f3f4f6;
+        font-size: 10pt;
+    }
+    .print-guide {
+        text-align: center;
+        padding: 20px;
+        background: #eef2ff;
+        border-bottom: 1px solid #c7d2fe;
+        color: #3730a3;
+        font-size: 14px;
+    }
+    .print-button {
+        background: #4f46e5;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    .print-button:hover { background: #4338ca; }
+
+    .resume-wrapper {
+        width: 210mm;
+        margin: 20px auto;
+        background: white;
+        padding: 15mm 20mm;
+        box-sizing: border-box;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3, h4 { margin: 0; padding: 0; font-weight: 600; }
+    header {
+        text-align: center;
+        border-bottom: 2px solid var(--accent-color);
+        padding-bottom: 10px;
+        margin-bottom: 12px;
+    }
+    header h1 {
+        font-size: 24pt;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #111827;
+        margin-bottom: 4px;
+    }
+    .contact-info {
+        font-size: 9.5pt;
+        color: var(--secondary-color);
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+    .contact-info a { color: var(--accent-color); text-decoration: none; }
+    section { margin-bottom: 14px; }
+    section h2 {
+        font-size: 11.5pt;
+        text-transform: uppercase;
+        color: var(--accent-color);
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 3px;
+        margin-bottom: 8px;
+        letter-spacing: 0.5px;
+    }
+    .summary p { margin: 0; text-align: justify; font-size: 10pt; }
+    .skills-grid {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        gap: 6px;
+        font-size: 10pt;
+    }
+    .skill-category { font-weight: 600; color: #374151; }
+    .item { margin-bottom: 10px; }
+    .item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 2px;
+    }
+    .item-title { font-size: 10.5pt; font-weight: 700; color: #111827; }
+    .item-date { font-size: 9.5pt; font-weight: 500; color: var(--secondary-color); }
+    .item-subtitle {
+        font-size: 10pt;
+        font-weight: 500;
+        font-style: italic;
+        margin-bottom: 4px;
+        color: #374151;
+    }
+    .item-details ul { margin: 0; padding-left: 18px; }
+    .item-details li { margin-bottom: 3px; font-size: 10pt; text-align: justify; }
+    
+    .list-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 4px;
+        font-size: 9.5pt;
+    }
+    .list-grid div::before {
+        content: "•"; color: var(--accent-color); font-weight: bold;
+        display: inline-block; width: 1em; margin-left: -1em;
+    }
+    .list-grid div { padding-left: 1em; line-height: 1.3;}
+    
+    .two-column { display: flex; gap: 20px; }
+    .col { flex: 1; }
+
+    @media print {
+        body { background: white !important; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important;}
+        .print-guide { display: none !important; }
+        .resume-wrapper { margin: 0; padding: 0; box-shadow: none; width: 100%; height: auto; }
+        @page { size: A4; margin: 15mm 15mm; }
+        h2, h3, h4 { page-break-after: avoid; }
+        .item { page-break-inside: avoid; }
+        section { page-break-inside: avoid; }
+    }
+</style>
+</head>
+<body>
+    <div class="print-guide">
+        <strong>Tip:</strong> This resume is optimized for saving as a PDF! <br>
+        <button class="print-button" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+
+    <div class="resume-wrapper">
+        <header>
+            <h1>Al Francis B. Paz</h1>
+            <div class="contact-info">
+                <span><strong style="color: #1f2937;">Bachelor of Science in Computer Engineering</strong></span>
+                <span>|</span>
+                <span><i class="fas fa-envelope"></i> afpaz@gbox.adnu.edu.ph</span>
+                <span>|</span>
+                <span><a href="https://www.linkedin.com/in/al-francis-paz-32424224a/"><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/al-francis-paz-32424224a/</a></span>
+                <span>|</span>
+                <span><a href="https://github.com/8DUINOide"><i class="fab fa-github"></i> https://github.com/8DUINOide</a></span>
+                <span>|</span>
+                <span><a href="https://8duinoide.github.io/portfolio/"><i class="fas fa-globe"></i> https://8duinoide.github.io/portfolio/</a></span>
+            </div>
+        </header>
+
+        <section class="summary">
+            <h2>Professional Summary</h2>
+            <p>Passionate Computer Engineering student mapping a strong foundation in both software development and hardware integrations. Seeking to bridge the gap between hardware and software engineering. Demonstrated experience developing RESTful APIs, building full-stack applications, and designing Android solutions. Proven track record collaborating on backend systems, cloud deployments, and IoT hardware configurations.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">Frontend & Mobile:</div>
+                <div>JavaScript, React Native, HTML5, CSS3</div>
+                
+                <div class="skill-category">Backend & Cloud:</div>
+                <div>Java, Spring Boot, Python, Node.js, Firebase, PostgreSQL</div>
+                
+                <div class="skill-category">Hardware & Tools:</div>
+                <div>C++, Arduino, IoT, Linux, Git, Postman, IntelliJ IDEA, DigitalOcean</div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <h2>Work Experience</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">REVLV Solutions Inc.</span>
+                    <span class="item-date">Jun 2025 – Jul 2025</span>
+                </div>
+                <div class="item-subtitle">Backend Developer Intern</div>
+                <div class="item-details">
+                    <ul>
+                        <li>Developed the <strong>ExpenSEEs-API</strong>, a RESTful backend for expense tracking using Java, Spring Boot, and PostgreSQL.</li>
+                        <li>Implemented core features including user management, budget operations, efficient expense tracking algorithms, and generated structured liquidation reports.</li>
+                        <li>Integrated JWT-based authentication and Spring Security to enforce deterministic role-based access control.</li>
+                        <li>Deployed the software onto a DigitalOcean Linux server, establishing CORS for frontend dashboards.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Ateneo De Naga University</span>
+                    <span class="item-date">Expected Grad: May 2026</span>
+                </div>
+                <div class="item-subtitle">Bachelor of Science in Computer Engineering</div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Key Projects</h2>
+            <div class="item">
+                <div class="item-details">
+                    <ul>
+                        <li><strong>Expense Tracking System Backend:</strong> Architected a robust backend ecosystem utilizing Spring Boot and Java. Engineered JWT authentication and workflows.</li>
+                        <li><strong>University Web Portal:</strong> Designed a Node.js-based student dashboard providing secure portals accessing dynamic schedules, real-time grades, and structured financial statements.</li>
+                        <li><strong>BINI Music Streaming App:</strong> Developed a native Android software mapping with Kotlin. Configured background playback handlers and media controls.</li>
+                        <li><strong>Real-time Multiplayer Tic-Tac-Toe:</strong> Launched an Android application leveraging the Firebase Realtime Database. Engineered online matchmaking through room-codes.</li>
+                        <li><strong>Brick Breaker CpE:</strong> Designed an educational arcade game using React Native where players interact with elements representing computer engineering subjects.</li>
+                        <li><strong>Embedded IoT Solutions:</strong> Engineered 10+ integrations of software over hardware using C++/Arduino (Robotic automation, RFID security locks, sensory data).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-certifications">
+            <h2>Achievements, Events & Competitions</h2>
+            <div class="item">
+                <div class="item-details">
+                    <ul>
+                        <li><strong>Packethacks 2024 Finalist:</strong> Ideation competition successfully pitching innovative solutions to societal constraints to advance to final bounds.</li>
+                        <li><strong>Breadboarding Competition:</strong> Embarked on a 4-year journey from learning electronics basics to actively mentoring juniors in hardware circuits.</li>
+                        <li><strong>LAAD Software Festival:</strong> Annual showcase presenting cutting-edge projects and partaking in coding competitions.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="organizations">
+            <h2>Affiliations & Leadership</h2>
+            <div class="list-grid" style="margin-bottom: 8px;">
+                <div><strong>Ateneo Computer Engineering Society</strong> — Academic Director (2024-2026)</div>
+                <div><strong>ICpEP Student Edition - Bicol</strong> — Member (2022-2026)</div>
+                <div><strong>Ateneo Chess Enthusiasts</strong> — Member (2024-2026)</div>
+            </div>
+        </section>
+
+        <section class="certs" style="page-break-inside: avoid;">
+            <div class="two-column">
+                <div class="col">
+                    <h2>Certifications</h2>
+                    <div class="list-grid" style="grid-template-columns: 1fr;">
+                        <div>Cisco: Data Analytics Essentials</div>
+                        <div>Cisco: Ethical Hacker</div>
+                        <div>Cisco: Intro to Cybersecurity</div>
+                        <div>Cisco: Intro to IoT and Digital Transformation</div>
+                        <div>Cisco: Junior Cybersecurity Analyst</div>
+                        <div>Cisco: Network Support and Security</div>
+                        <div>Cisco: Programming Essentials in C++</div>
+                        <div>Cisco: Programming Essentials in Python</div>
+                        <div>NDG: Linux Essentials</div>
+                        <div>NDG: Linux Unhatched</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h2>Seminars & Field Trips</h2>
+                    <div class="list-grid" style="grid-template-columns: 1fr;">
+                        <div><strong>Seminar:</strong> Cybersecurity Awareness</div>
+                        <div><strong>Seminar:</strong> Web Automation with Playwright</div>
+                        <div><strong>Seminar:</strong> CI/CD with GitLab</div>
+                        <div><strong>Seminar:</strong> Advanced Cybersecurity</div>
+                        <div><strong>Seminar:</strong> Smart Transport Surveys</div>
+                        <div><strong>Visit:</strong> Wistron (Tech Manufacturing)</div>
+                        <div><strong>Visit:</strong> PLDT & Smart (Telecommunications)</div>
+                        <div><strong>Visit:</strong> BRP Hydrographer Presbitero</div>
+                        <div><strong>Visit:</strong> Vessel Traffic Management System</div>
+                        <div><strong>Visit:</strong> GigaMare (Maritime Tech)</div>
+                        <div><strong>Visit:</strong> Law Enforcement Department</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="references" style="page-break-inside: avoid; margin-top: 8px;">
+            <h2>References</h2>
+            <div class="two-column">
+                <div class="col">
+                    <div style="font-size: 10.5pt; font-weight: 700; color: #111827;">Elmer C. Claveria</div>
+                    <div style="font-size: 10pt; font-style: italic; color: #374151;">Instructor</div>
+                    <div style="font-size: 9.5pt; line-height: 1.3;">Faculty, ECE / CpE Department<br>College of Science, Engineering and Architecture<br>Ateneo De Naga University</div>
+                    <div style="font-size: 9.5pt; margin-top: 4px; line-height: 1.3;"><i class="fas fa-phone"></i> 09998806962<br><i class="fas fa-envelope"></i> eclaveria@gbox.adnu.edu.ph</div>
+                </div>
+                <div class="col">
+                    <div style="font-size: 10.5pt; font-weight: 700; color: #111827;">Karla Louissa Marie D. Sobrevilla</div>
+                    <div style="font-size: 10pt; font-style: italic; color: #374151;">Instructor</div>
+                    <div style="font-size: 9.5pt; line-height: 1.3;">Faculty, ECE / CpE Department<br>College of Science, Engineering and Architecture<br>Ateneo De Naga University</div>
+                    <div style="font-size: 9.5pt; margin-top: 4px; line-height: 1.3;"><i class="fas fa-phone"></i> 09156911746<br><i class="fas fa-envelope"></i> ksobrevilla@gbox.adnu.edu.ph</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
