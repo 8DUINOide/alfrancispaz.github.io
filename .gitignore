@@ -19,5 +19,5 @@ Thumbs.db
 # Local Logs
 *.log
 
-# Temporary templates (optional, keeping purely for repo cleanliness)
-# printable_resume*.html
+# Temporary templates
+printable_resume*.html
